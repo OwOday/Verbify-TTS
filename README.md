@@ -1,3 +1,6 @@
+MAGIC PYENV INCANTATION FOR GETTING TKINTER 
+PYTHON_CONFIGURE_OPTS="--enable-shared --with-tcltk-includes=/usr/include/tcl --with-tcltk-libs=\"/usr/lib/tcl8.6 /usr/lib/tk8.6\"" pyenv install <version>
+
 # Verbify-TTS
 
 
