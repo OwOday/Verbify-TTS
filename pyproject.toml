@@ -1,0 +1,279 @@
+[project]
+name = "verbify-tts"
+description = "Verbify-TTS is a simple Text-to-Speech (TTS) engine that reads for you any text on your screen with high-quality voices powered by AI models. It is free and you can use it for unlimited time (Open Source MIT LICENSE)."
+authors = [{name = "Matthieu Ancellin", email = "matthieu.ancellin@eurobios.com"}]
+requires-python = "==3.8"
+package_mode = false
+dependencies = [
+   "numpy>=1.20; python_version>='3.9'",
+   "numpy>=1.24; python_version=='3.8'",  # https://github.com/capytaine/capytaine/issues/562
+   "scipy",
+   "pandas>=1.3",
+   "xarray",
+   "rich",
+   "absl-py==0.15.0; python_version=='3.8'",
+"appdirs==1.4.4; python_version=='3.8'",
+"astunparse==1.6.3; python_version=='3.8'",
+"audioread==2.1.9; python_version=='3.8'",
+"cachetools==5.2.0; python_version=='3.8'",
+"certifi==2022.6.15; python_version=='3.8'",
+"cffi==1.15.1; python_version=='3.8'",
+"charset-normalizer==2.0.12; python_version=='3.8'",
+"clang==5.0; python_version=='3.8'",
+"click==8.1.3; python_version=='3.8'",
+"cycler==0.11.0; python_version=='3.8'",
+"Cython==0.29.30; python_version=='3.8'",
+"dataclasses==0.6; python_version=='3.8'",
+"decorator==5.1.1; python_version=='3.8'",
+"Distance==0.1.3; python_version=='3.8'",
+"docopt==0.6.2; python_version=='3.8'",
+"filelock==3.7.1; python_version=='3.8'",
+"Flask==2.0.3; python_version=='3.8'",
+"Flask-Cors==3.0.10; python_version=='3.8'",
+"flatbuffers==1.12; python_version=='3.8'",
+"fonttools==4.34.4; python_version=='3.8'",
+"g2p-en==2.1.0; python_version=='3.8'",
+"g2pM==0.1.2.5; python_version=='3.8'",
+"gast==0.4.0; python_version=='3.8'",
+#"german-transliterate @ git+https://github.com/repodiac/german_transliterate@4e01beba5f19adb9ccd72d0607a81f4ed7f6ee87; python_version=='3.8'",
+"google-auth==2.9.1; python_version=='3.8'",
+"google-auth-oauthlib==0.4.6; python_version=='3.8'",
+"google-pasta==0.2.0; python_version=='3.8'",
+"grpcio==1.47.0; python_version=='3.8'",
+"h5py==3.1.0; python_version=='3.8'",
+"huggingface-hub==0.0.8; python_version=='3.8'",
+"idna==3.3; python_version=='3.8'",
+"importlib-metadata==4.12.0; python_version=='3.8'",
+"inflect==5.6.2; python_version=='3.8'",
+"itsdangerous==2.1.2; python_version=='3.8'",
+"jamo==0.4.1; python_version=='3.8'",
+"Jinja2==3.1.2; python_version=='3.8'",
+"joblib==1.1.0; python_version=='3.8'",
+"keras==2.6.0; python_version=='3.8'",
+"Keras-Preprocessing==1.1.2; python_version=='3.8'",
+"kiwisolver==1.4.4; python_version=='3.8'",
+"libclang==14.0.1; python_version=='3.8'",
+"librosa==0.9.2; python_version=='3.8'",
+"llvmlite==0.31.0; python_version=='3.8'",
+"Markdown==3.4.1; python_version=='3.8'",
+"MarkupSafe==2.1.1; python_version=='3.8'",
+"matplotlib==3.5.2; python_version=='3.8'",
+"MouseInfo==0.1.3; python_version=='3.8'",
+"nltk==3.7; python_version=='3.8'",
+"num2words==0.5.10; python_version=='3.8'",
+"numba==0.48.0; python_version=='3.8'",
+"numpy==1.19.5; python_version=='3.8'",
+"oauthlib==3.2.0; python_version=='3.8'",
+"opt-einsum==3.3.0; python_version=='3.8'",
+"packaging==21.3; python_version=='3.8'",
+"pandas==1.4.0; python_version=='3.8'",
+"Pillow==9.2.0; python_version=='3.8'",
+"pooch==1.6.0; python_version=='3.8'",
+"protobuf==3.19.4; python_version=='3.8'",
+"pyasn1==0.4.8; python_version=='3.8'",
+"pyasn1-modules==0.2.8; python_version=='3.8'",
+"PyAutoGUI==0.9.53; python_version=='3.8'",
+"pycparser==2.21; python_version=='3.8'",
+"pygame==2.1.2; python_version=='3.8'",
+"PyGetWindow==0.0.9; python_version=='3.8'",
+"PyMsgBox==1.0.9; python_version=='3.8'",
+"pyparsing==3.0.9; python_version=='3.8'",
+"pyperclip==1.8.2; python_version=='3.8'",
+"pypinyin==0.46.0; python_version=='3.8'",
+"PyRect==0.2.0; python_version=='3.8'",
+"PyScreeze==0.1.28; python_version=='3.8'",
+"python-dateutil==2.8.2; python_version=='3.8'",
+"python3-xlib==0.15; python_version=='3.8'",
+"pytweening==1.0.4; python_version=='3.8'",
+"pytz==2022.1; python_version=='3.8'",
+"pyworld==0.3.0; python_version=='3.8'",
+"PyYAML==6.0; python_version=='3.8'",
+"regex==2022.7.9; python_version=='3.8'",
+"requests==2.27.1; python_version=='3.8'",
+"requests-oauthlib==1.3.1; python_version=='3.8'",
+"resampy==0.3.1; python_version=='3.8'",
+"rsa==4.8; python_version=='3.8'",
+"scikit-learn==1.1.1; python_version=='3.8'",
+"scipy==1.8.1; python_version=='3.8'",
+"six==1.15.0; python_version=='3.8'",
+"SoundFile==0.10.3.post1; python_version=='3.8'",
+"tensorboard==2.9.1; python_version=='3.8'",
+"tensorboard-data-server==0.6.1; python_version=='3.8'",
+"tensorboard-plugin-wit==1.8.1; python_version=='3.8'",
+"tensorflow-addons==0.17.1; python_version=='3.8'",
+"tensorflow-estimator==2.9.0; python_version=='3.8'",
+"tensorflow-gpu==2.6.0; python_version=='3.8'",
+"tensorflow-io-gcs-filesystem==0.26.0; python_version=='3.8'",
+"TensorFlowTTS==1.8; python_version=='3.8'",
+"termcolor==1.1.0; python_version=='3.8'",
+"TextGrid==1.5; python_version=='3.8'",
+"threadpoolctl==3.1.0; python_version=='3.8'",
+"tqdm==4.64.0; python_version=='3.8'",
+"typeguard==2.13.3; python_version=='3.8'",
+"typing-extensions==3.7.4.3; python_version=='3.8'",
+"Unidecode==1.3.4; python_version=='3.8'",
+"urllib3==1.26.10; python_version=='3.8'",
+"Werkzeug==2.1.2; python_version=='3.8'",
+"wrapt==1.12.1; python_version=='3.8'",
+"zipp==3.8.1; python_version=='3.8'"
+]
+urls = {repository = "https://github.com/OwOday/Verbify-TTS"}
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Fortran",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Topic :: Scientific/Engineering",
+]
+scripts = {server = "server:main"}
+dynamic = ['version']
+
+[project.optional-dependencies]
+optional = [
+  "matplotlib", "joblib>=1.3", "meshio",
+  # "quadpy-gpl",
+  # "bemio @ https://github.com/mancellin/bemio/archive/fa3a6d3d4b0862491c3723919ec8ee45cc7d055a.zip"
+]
+#test = ["pytest"]
+#docs = ["sphinx", "sphinx-toolbox", "sphinxcontrib-proof", "sphinxcontrib-mermaid"]
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+    "setuptools >= 61.0",
+    "tk",
+    "meson-python",
+    "charset-normalizer",
+    #"numpy>=2.0.0; python_version>='3.9'",
+    "numpy==1.24.4;  python_version=='3.8'",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.poetry]
+name = 'verbify-tts'
+version = '0.0.2'
+authors = ["Matthieu Ancellin"]
+description = 'none'
+
+[tool.poetry.dependencies]
+python =  '3.8.19'
+absl-py = '0.15.0'
+appdirs = '1.4.4'
+astunparse = '1.6.3'
+audioread = '2.1.9'
+cachetools = '5.2.0'
+certifi = '2022.6.15'
+cffi = '1.15.1'
+charset-normalizer = '2.0.12'
+clang = '5.0'
+click = '8.1.3'
+cycler = '0.11.0'
+Cython = '0.29.30'
+dataclasses = '0.6'
+decorator = '5.1.1'
+Distance = '0.1.3'
+docopt = '0.6.2'
+filelock = '3.7.1'
+Flask = '2.0.3'
+Flask-Cors = '3.0.10'
+flatbuffers = '1.12'
+fonttools = '4.34.4'
+g2p-en = '2.1.0'
+g2pM = '0.1.2.5'
+gast = '0.4.0'
+german-transliterate = { git = "https://github.com/repodiac/german_transliterate", rev = "4e01beba5f19adb9ccd72d0607a81f4ed7f6ee87" }
+google-auth = '2.9.1'
+google-auth-oauthlib = '0.4.6'
+google-pasta = '0.2.0'
+grpcio = '1.47.0'
+h5py = '3.1.0'
+huggingface-hub = '0.0.8'
+idna = '3.3'
+importlib-metadata = '4.12.0'
+inflect = '5.6.2'
+itsdangerous = '2.1.2'
+jamo = '0.4.1'
+Jinja2 = '3.1.2'
+joblib = '1.1.0'
+keras = '2.6.0'
+Keras-Preprocessing = '1.1.2'
+kiwisolver = '1.4.4'
+libclang = '14.0.1'
+librosa = '0.9.2'
+llvmlite = '0.31.0'
+Markdown = '3.4.1'
+MarkupSafe = '2.1.1'
+matplotlib = '3.5.2'
+MouseInfo = '0.1.3'
+nltk = '3.7'
+num2words = '0.5.10'
+numba = '0.48.0'
+numpy = '1.19.5'
+oauthlib = '3.2.0'
+opt-einsum = '3.3.0'
+packaging = '21.3'
+pandas = '1.3.3'
+Pillow = '9.2.0'
+pooch = '1.6.0'
+protobuf = '3.19.4'
+pyasn1 = '0.4.8'
+pyasn1-modules = '0.2.8'
+PyAutoGUI = '0.9.53'
+pycparser = '2.21'
+pygame = '2.1.2'
+PyGetWindow = '0.0.9'
+PyMsgBox = '1.0.9'
+pyparsing = '3.0.9'
+pyperclip = '1.8.2'
+pypinyin = '0.46.0'
+PyRect = '0.2.0'
+PyScreeze = '0.1.28'
+python-dateutil = '2.8.2'
+python3-xlib = '0.15'
+pytweening = '1.0.4'
+pytz = '2022.1'
+pyworld = '0.3.0'
+PyYAML = '6.0'
+regex = '2022.7.9'
+requests = '2.27.1'
+requests-oauthlib = '1.3.1'
+resampy = '0.3.1'
+rsa = '4.8'
+scikit-learn = '1.1.1'
+scipy = '1.8.1'
+six = '1.15.0'
+SoundFile = '0.10.3.post1'
+tensorboard = '2.9.1'
+tensorboard-data-server = '0.6.1'
+tensorboard-plugin-wit = '1.8.1'
+tensorflow-addons = '0.17.1'
+tensorflow-estimator = '2.9.0'
+tensorflow-gpu = '2.6.0'
+tensorflow-io-gcs-filesystem = '0.26.0'
+TensorFlowTTS = '1.8'
+termcolor = '1.1.0'
+TextGrid = '1.5'
+threadpoolctl = '3.1.0'
+tqdm = '4.64.0'
+typeguard = '2.13.3'
+typing-extensions = '3.7.4.3'
+Unidecode = '1.3.4'
+urllib3 = '1.26.10'
+Werkzeug = '2.1.2'
+wrapt = '1.12.1'
+zipp = '3.8.1'
+
+#[tool.cibuildwheel]
+#test-requires = ["pytest"]
+#test-command = "pytest {project}/pytest/"
+#
+#[tool.ruff.lint]
+#select = ["E", "F", "W", "NPY"]
+#ignore = ["E501"]
+#
+#[tool.ruff.lint.per-file-ignores]
+#"__init__.py" = ["E402", "F401"]

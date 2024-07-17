@@ -5,27 +5,27 @@
 # packages from the Python Package Index and other indexes.
 echo "===============================================================".
 echo "Updating Python dependencies..."
-python3 -m pip install --user --upgrade pip
+#python3 -m pip install --user --upgrade pip
 
 
 # Install a virtual environment to download all the required python packages.
 # TIPS: virtualenv is a tool for creating isolated Python environments.
 # More info: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
-python3 -m pip install --user virtualenv
+#python3 -m pip install --user virtualenv
 
 
 # Create a virtual environment.
 # TIPS: this will create another folder (named env) in the current repository
 echo "===============================================================".
 echo "Creating virtual environment..."
-python3 -m venv env
+#python3 -m venv env
 echo "Virtual environment created in /env directory."
 
 # Activate the virtual environment
 echo "==============================================================="
 echo "Activating the virtual environment..."
-source env/bin/activate
-python3 -m pip install --upgrade pip
+#source env/bin/activate
+#python3 -m pip install --upgrade pip
 
 
 # Install all the dependencies
@@ -33,7 +33,7 @@ python3 -m pip install --upgrade pip
 # python packages which will be installed in the virtual environment.
 echo "==============================================================="
 echo "Installing Verbify-TTS dependencies..."
-python3 -m pip install -r requirements.txt
+#python3 -m pip install -r requirements.txt
 
 
 # Set up the command to start the verbify-tts system.

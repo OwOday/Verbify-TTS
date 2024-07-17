@@ -13,8 +13,8 @@ from utils import read_yaml_file
 from utils import get_root_directory
 
 
-with pya.hold('ctrl'):
-    pya.press(['c'])
+#with pya.hold('ctrl'):
+#    pya.press(['c'])
 root = Tk()
 text_from_clipboard = root.clipboard_get()
 time.sleep(100/1000)  # milliseconds
